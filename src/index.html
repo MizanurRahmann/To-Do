@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/to-do-list.svg">
+    <link rel="stylesheet" href="./style/css/style.css">
+    <title>toDO</title>
+</head>
+<body>
+    <section id="todo">
+        <div class="todo_list">
+            <div class="todo_list_contents">
+                <h1 class="heading">Todo <span class="date">Apr 09</span></h1>
+                <form>
+                    <input type="text" class="input_description" placeholder="Enter what you want to do today">
+                    <button type="button" class="common_btn"> + </button>
+                </form>
+                
+                <div class="todo_list_items">
+                    <!-- <div class="todo_list_item" id="todo-0">
+                        <div class="item_check"><div class="item_check_box"></div></div>
+                        <div class="item_description"><p>Drink 6 glasses water</p></div>
+                        <div class="item_delete_btn">
+                            <div class="item_delete_btn_img"><img src="./img/rubbish.svg"></div>
+                        </div>
+                    </div> -->
+                    <!-- <div class="todone_list_item" id="done-0">
+                        <div class="item_check"><div class="item_check_box"></div></div>
+                        <div class="item_description"><p>Read 30 pages</p></div>
+                        <div class="item_delete_btn"><img src="./img/rubbish.svg"></div>
+                    </div> -->
+                </div>
+            </div>        
+        </div>
+        <div class="todo_progress">
+            <div class="todo_progress_box">
+                <h1 class="progress_heading">Your Progress</h1>
+                <svg class="progress_box">
+                    <circle id="circle" cx="50%" cy="50%" r="70px"/>
+                    <circle id="circle_below" cx="50%" cy="50%" r="70px"/>
+                    <text id="percent" x="50%" y="50%"> 0% </text>
+                </svg>
+                <div class="progress_info">
+                    <h4 class="task_done" id="active">DONE</h4>
+                    <h4 class="task_todo">TO-DO</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/main.js"></script>
+</body>
+</html>
